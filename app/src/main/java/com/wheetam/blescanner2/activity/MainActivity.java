@@ -70,41 +70,41 @@ public class MainActivity extends AppCompatActivity {
         // 블루투스 권한 요청
         ActivityCompat.requestPermissions(this,new String[]{Manifest.permission.BLUETOOTH},1);
 //        if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN){
-            getPermissions();           // 권한 검사
+        getPermissions();           // 권한 검사
 
-            // Is Bluetooth supported on this device?
-            if (mBluetoothAdapter != null) {
+        // Is Bluetooth supported on this device?
+        if (mBluetoothAdapter != null) {
 
-                // Is Bluetooth turned on?
-                if (mBluetoothAdapter.isEnabled()) {
-                    setupFragments();
+            // Is Bluetooth turned on?
+            if (mBluetoothAdapter.isEnabled()) {
+                setupFragments();
 
-                    // Are Bluetooth Advertisements supported on this device?
-                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-                        if (mBluetoothAdapter.isMultipleAdvertisementSupported()) {
+                // Are Bluetooth Advertisements supported on this device?
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+                    if (mBluetoothAdapter.isMultipleAdvertisementSupported()) {
 
-                            // Everything is supported and enabled, load the fragments.
-                            setupFragments();
+                        // Everything is supported and enabled, load the fragments.
+                        setupFragments();
 
-                        } else {
+                    } else {
 
-                            // Bluetooth Advertisements are not supported.
-                            showErrorText(R.string.bt_ads_not_supported);
-                            Log.e("app_errs","Bluetooth Advertisements are not supported.");
-                        }
+                        // Bluetooth Advertisements are not supported.
+                        showErrorText(R.string.bt_ads_not_supported);
+                        Log.e("app_errs","Bluetooth Advertisements are not supported.");
                     }
-                } else {
-                    Log.i("permissions","Prompt user to turn on Bluetooth");
-                    // Prompt user to turn on Bluetooth (logic continues in onActivityResult()).
-                    Intent enableBtIntent = new Intent(BluetoothAdapter.ACTION_REQUEST_ENABLE);
-                    startActivityForResult(enableBtIntent, REQUEST_ENABLE_BT);
                 }
             } else {
-
-                // Bluetooth is not supported.
-                showErrorText(R.string.bt_not_supported);
-                Log.e("app_errs","Bluetooth is not supported.");
+                Log.i("permissions","Prompt user to turn on Bluetooth");
+                // Prompt user to turn on Bluetooth (logic continues in onActivityResult()).
+                Intent enableBtIntent = new Intent(BluetoothAdapter.ACTION_REQUEST_ENABLE);
+                startActivityForResult(enableBtIntent, REQUEST_ENABLE_BT);
             }
+        } else {
+
+            // Bluetooth is not supported.
+            showErrorText(R.string.bt_not_supported);
+            Log.e("app_errs","Bluetooth is not supported.");
+        }
 //        }
 
 
@@ -324,6 +324,9 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onPause() {
         super.onPause();
+
+        Log.d("main_class", "onpause");
+
     }
 
     /**

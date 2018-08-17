@@ -5,7 +5,7 @@
     android:id="@+id/constraintLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.wheetam.blescanner2.activity.MainActivity$PlaceholderFragment">
+    tools:context=".activity.MainActivity$PlaceholderFragment">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -29,8 +29,18 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Scan"
-            android:textSize="20dp"
+            android:text="Start Scanning"
+            android:textSize="30dp"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+        <Button
+            android:id="@+id/stop_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Stop Scanning"
+            android:textSize="30dp"
+            android:visibility="gone"
             app:layout_constraintBottom_toBottomOf="parent" />
     </LinearLayout>
 

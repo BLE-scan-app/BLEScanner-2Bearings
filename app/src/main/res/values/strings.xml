@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">BLEScanner2</string>
+    <string name="app_name">BLEScanner-2Bearings</string>
     <string name="tab_txt_dev">Devices</string>
     <string name="tab_txt_dir">Directions</string>
     <string name="action_settings">Settings</string>

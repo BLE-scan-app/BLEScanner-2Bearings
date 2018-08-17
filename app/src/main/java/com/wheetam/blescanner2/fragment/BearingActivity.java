@@ -17,31 +17,31 @@ public class BearingActivity extends Fragment{
 
     public static TextView tv_north_title;
     public static TextView tv_north_info;
-    public static TextView tv_north_rssi;
-    public static TextView tv_north_tx;
+//    public static TextView tv_north_rssi;
+//    public static TextView tv_north_tx;
 
     public static TextView tv_south_title;
     public static TextView tv_south_info;
-    public static TextView tv_south_rssi;
-    public static TextView tv_south_tx;
+//    public static TextView tv_south_rssi;
+//    public static TextView tv_south_tx;
 
     public static TextView tv_east_title;
     public static TextView tv_east_info;
-    public static TextView tv_east_rssi;
-    public static TextView tv_east_tx;
+//    public static TextView tv_east_rssi;
+//    public static TextView tv_east_tx;
 
     public static TextView tv_west_title;
     public static TextView tv_west_info;
-    public static TextView tv_west_rssi;
-    public static TextView tv_west_tx;
+//    public static TextView tv_west_rssi;
+//    public static TextView tv_west_tx;
 
     public static TextView tv_center_title;
     public static TextView tv_center_info;
-    public static TextView tv_center_rssi;
-    public static TextView tv_center_tx;
-
-    private static final int IDX_RSSI = 2; // 2,3
-    private static final int IDX_TX = 16; // 16,17
+//    public static TextView tv_center_rssi;
+//    public static TextView tv_center_tx;
+//
+//    private static final int IDX_RSSI = 2; // 2,3
+//    private static final int IDX_TX = 16; // 16,17
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
@@ -84,6 +84,23 @@ public class BearingActivity extends Fragment{
 //        tv_center_tx = (TextView)rootView.findViewById(R.id.center_tx);
 
         return rootView;
+    }
+
+    public static void clearText(){
+        tv_north_title.setText("");
+        tv_north_info.setText("");
+
+        tv_south_title.setText("");
+        tv_south_info.setText("");
+
+        tv_east_title.setText("");
+        tv_east_info.setText("");
+
+        tv_west_title.setText("");
+        tv_west_info.setText("");
+
+        tv_center_title.setText("");
+        tv_center_info.setText("");
     }
 
 //    public static void setTitle(String title){

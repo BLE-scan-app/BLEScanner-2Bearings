@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.wheetam.blescanner", appContext.getPackageName());
+        assertEquals("com.wheetam.blescanner2", appContext.getPackageName());
     }
 }
