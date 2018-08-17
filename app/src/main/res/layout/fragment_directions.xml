@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.wheetam.blescanner2.activity.MainActivity$PlaceholderFragment">
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:stretchColumns="*">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/north"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#b0b0b0"
+                    android:gravity="center_horizontal"
+                    
+                    android:textSize="35dp" />
+
+                <TextView
+                    android:id="@+id/north_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal"
+                    android:text="POlar0:\ndbm\nTx"
+                    android:textSize="30dp" />
+                <!--<TextView-->
+                    <!--android:id="@+id/north_tx"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:gravity="center_horizontal"-->
+                    <!--android:text="Tx value "-->
+                    <!--android:textSize="10dp" />-->
+
+            </LinearLayout>
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/west"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#b0b0b0"
+                    android:gravity="center_horizontal"
+                    
+                    android:textSize="35dp" />
+
+                <TextView
+                    android:id="@+id/west_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="POlar0:\ndbm\nTx"
+                    android:textSize="30dp" />
+                <!--<TextView-->
+                    <!--android:id="@+id/west_tx"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:gravity="center_horizontal"-->
+                    <!--android:text="Tx value "-->
+                    <!--android:textSize="10dp" />-->
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="#b0b0b0"
+                    android:gravity="center_horizontal"
+                    
+                    android:textSize="35dp" />
+
+                <TextView
+                    android:id="@+id/center_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="POlar0:\ndbm\nTx"
+                    android:textSize="30dp" />
+                <!--<TextView-->
+                    <!--android:id="@+id/center_tx"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:gravity="center_horizontal"-->
+                    <!--android:text="Tx value "-->
+                    <!--android:textSize="10dp" />-->
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/east"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#b0b0b0"
+                    android:gravity="center_horizontal"
+                    
+                    android:textSize="35dp" />
+
+                <TextView
+                    android:id="@+id/east_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="POlar0:\ndbm\nTx"
+                    android:textSize="30dp" />
+                <!--<TextView-->
+                    <!--android:id="@+id/east_tx"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:gravity="center_horizontal"-->
+                    <!--android:text="Tx value "-->
+                    <!--android:textSize="10dp" />-->
+
+            </LinearLayout>
+
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/south"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#b0b0b0"
+                    android:gravity="center_horizontal"
+                    
+                    android:text=""
+                    android:textSize="35dp" />
+
+                <TextView
+                    android:id="@+id/south_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="POlar0:\ndbm\nTx"
+                    android:textSize="30dp" />
+
+                <!--<TextView-->
+                    <!--android:id="@+id/south_tx"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:gravity="center_horizontal"-->
+                    <!--android:text="Tx value "-->
+                    <!--android:textSize="10dp" />-->
+
+            </LinearLayout>
+
+        </TableRow>
+    </TableLayout>
+
+
+</android.support.constraint.ConstraintLayout>
